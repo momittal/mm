@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- <bean id="userValidator" class="com.yusuf.spring.controller.UserValidator"></bean>
+	<bean id="categoryValidator" class="com.yusuf.spring.controller.CategoryValidator"></bean>
+	<bean id="advertValidator" class="com.yusuf.spring.controller.AdvertValidator"></bean> -->
+	
+	
+	<bean id="userDao" class="com.mittalmohit.hotelbooking.dao.UserDAO"></bean> 
+	<bean id="searchDao" class="com.mittalmohit.hotelbooking.dao.SearchDAO"></bean>
+	<bean id="affiliateDao" class="com.mittalmohit.hotelbooking.dao.AffiliateDAO"></bean> 
+	<bean id="roomDao" class="com.mittalmohit.hotelbooking.dao.RoomDAO"></bean>
+	<bean id="bookingDao" class="com.mittalmohit.hotelbooking.dao.BookingDAO"></bean>
+	
+	<bean id="payment" class="com.mittalmohit.hotelbooking.pojo.Payment"></bean>
+	<bean id="room" class="com.mittalmohit.hotelbooking.pojo.Room"></bean>
+	<bean id="userAccount" class="com.mittalmohit.hotelbooking.pojo.UserAccount"></bean>
+	<bean id="booking" class="com.mittalmohit.hotelbooking.pojo.Booking"></bean>
+	<bean id="address" class="com.mittalmohit.hotelbooking.pojo.Address"></bean>
+	<bean id="amenity" class="com.mittalmohit.hotelbooking.pojo.Amenity"></bean>
+	<bean id="employee" class="com.mittalmohit.hotelbooking.pojo.Employee"></bean>
+	<bean id="hotel" class="com.mittalmohit.hotelbooking.pojo.Hotel"></bean>
+	<bean id="review" class="com.mittalmohit.hotelbooking.pojo.Review"></bean>
+	<bean id="service" class="com.mittalmohit.hotelbooking.pojo.Service"></bean>
+	<bean id="user" class="com.mittalmohit.hotelbooking.pojo.User"></bean>
+	
+	<bean id="pdfView" class="com.mittalmohit.hotelbooking.springview.PdfReportView"></bean>
+	
+	 
+	
+	<bean id="userValidator" class="com.mittalmohit.hotelbooking.validator.UserValidator"></bean>
+</beans>
