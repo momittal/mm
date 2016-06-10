@@ -23,7 +23,6 @@
 	<bean id="amenity" class="com.mittalmohit.hotelbooking.pojo.Amenity"></bean>
 	<bean id="employee" class="com.mittalmohit.hotelbooking.pojo.Employee"></bean>
 	<bean id="hotel" class="com.mittalmohit.hotelbooking.pojo.Hotel"></bean>
-	<bean id="review" class="com.mittalmohit.hotelbooking.pojo.Review"></bean>
 	<bean id="service" class="com.mittalmohit.hotelbooking.pojo.Service"></bean>
 	<bean id="user" class="com.mittalmohit.hotelbooking.pojo.User"></bean>
 	

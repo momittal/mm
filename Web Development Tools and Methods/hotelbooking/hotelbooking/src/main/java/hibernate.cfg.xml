@@ -26,7 +26,6 @@
 		
 		<mapping class="com.mittalmohit.hotelbooking.pojo.Booking" />
 		<mapping class="com.mittalmohit.hotelbooking.pojo.Payment" />
-		<mapping class="com.mittalmohit.hotelbooking.pojo.Review" />
 
 	</session-factory>
 </hibernate-configuration>
