@@ -42,7 +42,7 @@ public class LoginController {
 			return "error";
 		}
 		session.setAttribute("user", authenticatedBuyer);
-		return "success";
+		return "buyer/buyerhome";
 	}
 	
 	

@@ -41,4 +41,12 @@ public class ProductDAO extends DAO {
         commit();
         return list;
 	}
+
+	public List<Product> viewAllProducts() {
+		begin();
+        Query q = getSession().createQuery("from Product");
+        List list = q.list();
+        commit();
+        return list;
+	}
 }

@@ -1,56 +1,76 @@
 @CHARSET "ISO-8859-1";
 
-.content{
+.content {
 	margin-left: 20px;
-	margin-top:20px;
-	margin-right:20px;
-	margin-width:20px;
-	height:auto;
-	width:auto;
-	border:2px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-width: 20px;
+	height: auto;
+	width: auto;
+	border: 2px;
 	border: solid;
 }
-#header{
-	background-color:gray;
+
+#header {
+	background-color: gray;
 	margin-left: 20px;
-	margin-top:20px;
-	margin-right:20px;
-	height:40px;
-	width:auto;
-	border:1px;
+	margin-top: 20px;
+	margin-right: 20px;
+	height: 40px;
+	width: auto;
+	border: 1px;
 	border: solid;
 	text-align: right;
-	
 }
-#footer{
+
+#footer {
 	margin-left: 20px;
-	margin-top:20px;
-	margin-right:20px;
-	height:40px;
-	width:auto;
-	border:1px;
+	margin-top: 20px;
+	margin-right: 20px;
+	height: 40px;
+	width: auto;
+	border: 1px;
 	border: solid;
 	background-color: gray;
 	text-align: center;
 }
-#welcome{
+
+#welcome {
 	margin-left: 20px;
-	margin-top:20px;
-	margin-right:20px;
-	height:60px;
-	width:auto;
-	border:1px;
+	margin-top: 20px;
+	margin-right: 20px;
+	height: 60px;
+	width: auto;
+	border: 1px;
 	border: solid;
 }
-#form{
+
+#form {
 	position: relative;
 	margin-left: 20px;
-	margin-top:20px;
-	margin-right:20px;
-	height:auto;
-	width:auto;
+	margin-top: 20px;
+	margin-right: 20px;
+	height: auto;
+	width: auto;
 	text-align: center;
 	float: center;
+}
+
+ul.products {
+	list-style-type: none;
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	-webkit-column-gap: 4px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 4px; /* Firefox */
+	column-gap: 4px;
 	
 }
 
+li{
+    border:1px solid grey;
+}
+
+li:first-child {
+    margin-top:0;
+}

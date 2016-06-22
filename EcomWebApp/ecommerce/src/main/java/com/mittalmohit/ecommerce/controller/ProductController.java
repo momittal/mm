@@ -49,7 +49,7 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="seller/viewproducts", method=RequestMethod.GET)
-	public String viewProduct(HttpServletRequest request){
+	public String viewSellerProducts(HttpServletRequest request){
 		HttpSession session = request.getSession();
 
 		if (session.getAttribute("user") != null){
@@ -59,8 +59,16 @@ public class ProductController {
 			return "seller/viewproducts";
 		}else{
 			return "error";
-		}
-			
+		}		
+	}
+	
+	@RequestMapping(value="buyer/products", method=RequestMethod.GET)
+	public String browseAllProducts(HttpServletRequest request){
+		
+		List<Product> allProducts= productDAO.viewAllProducts();
+		request.setAttribute("allProducts", allProducts);
+		request.setAttribute("test", "test");
+		return "buyer/products";
 	}
 
 }
